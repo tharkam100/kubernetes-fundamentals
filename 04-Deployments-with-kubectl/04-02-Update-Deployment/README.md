@@ -36,6 +36,10 @@ kubectl describe deployment my-first-deployment
 ```
 ### Verify ReplicaSet
 - **Observation:** New ReplicaSet will be created for new version
+  
+  PS D:\London_Learnings\Practise> kubectl get rs                                                                                                                                              NAME                             DESIRED   CURRENT   READY   AGE
+my-first-deployment-6798d667f5   5         5         5       3h9m
+my-first-deployment-f5dc549d6    0         0         0       3h37m
 ```
 # Verify ReplicaSet
 kubectl get rs
